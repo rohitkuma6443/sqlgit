@@ -1,5 +1,33 @@
 # SQL Notes
 
+# Introduction to SQL
+
+## What is SQL
+SQL (Structured Query Language) is a standard programming language used to manage and manipulate **[relational databases](ca://s?q=Relational_databases_explained)**.  
+It allows users to perform operations such as **[querying data](ca://s?q=SQL_querying_data)**, **[updating records](ca://s?q=Update_records_in_SQL)**, and **[managing schemas](ca://s?q=Database_schema_in_SQL)**.  
+SQL is essential for ensuring data consistency, integrity, and accessibility across applications.
+
+---
+
+## History
+- Developed in the 1970s by IBM as part of their **[System R project](ca://s?q=IBM_System_R_SQL_history)**.  
+- Standardized by ANSI in 1986 and ISO in 1987.  
+- Over time, SQL has evolved with extensions like **[T-SQL](ca://s?q=Transact_SQL_basics)** (Microsoft SQL Server), **[PL/SQL](ca://s?q=PL_SQL_basics)** (Oracle), and **[pgSQL](ca://s?q=PostgreSQL_SQL_basics)** (PostgreSQL).  
+- Today, SQL remains the backbone of most relational database systems.
+
+---
+
+## Use Cases
+- **[Data Analysis](ca://s?q=SQL_for_data_analysis)** – Extracting insights from large datasets.  
+- **[Reporting](ca://s?q=SQL_reporting_examples)** – Generating summaries, dashboards, and business intelligence reports.  
+- **[Application Development](ca://s?q=SQL_in_application_development)** – Powering backend systems for e-commerce, finance, healthcare, and more.  
+- **[Database Administration](ca://s?q=SQL_for_database_administration)** – Managing users, permissions, and performance tuning.  
+
+---
+
+
+---
+
 # 1. SQL Comments
 
 Comments are used to explain SQL code. They are not executed.
