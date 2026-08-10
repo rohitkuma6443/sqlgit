@@ -1,5 +1,4 @@
-# SQL Operators — Practical Notes
-
+# SQL Operators
 ---
 
 # 1. What is an SQL Operator?
