@@ -1,9 +1,5 @@
 # SQL Notes
 
-## Beginner Level
-
----
-
 # 1. SQL Comments
 
 Comments are used to explain SQL code. They are not executed.
