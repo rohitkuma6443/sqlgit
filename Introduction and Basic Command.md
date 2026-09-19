@@ -1,5 +1,3 @@
-# SQL Notes
-
 # Introduction to SQL
 
 ## What is SQL
@@ -25,8 +23,6 @@ SQL is essential for ensuring data consistency, integrity, and accessibility acr
 
 ---
 
-
----
 
 # 1. SQL Comments
 
@@ -1091,30 +1087,3 @@ SELECT
 TRUNCATE TABLE
 DROP TABLE
 ```
-
-### Most Important Concepts
-
-```text
-Data Type
-Constraint
-Primary Key
-Foreign Key
-Parent Table
-Child Table
-Relationship
-```
-
----
-
-# Important Note from the Source
-
-The uploaded file creates a table named `Student` with column `id`, but later uses `Students(StudentID)` in the `Attendance`, `Grades`, and `ParentDetails` definitions. This naming is inconsistent in the source.
-
-For a working project, use one consistent design, for example:
-
-```text
-Students
-└── StudentID
-```
-
-throughout the database.
