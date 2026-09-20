@@ -140,7 +140,7 @@ employees → Table name
 
 ---
 
-# 4. SELECT Specific Columns
+# 3.2. SELECT Specific Columns
 
 You don't always need all columns.
 
@@ -162,7 +162,7 @@ Result:
 
 ---
 
-# 5. Selecting Multiple Columns
+# 3.3. Selecting Multiple Columns
 
 ```sql
 SELECT employee_id, employee_name, department, city
@@ -186,7 +186,7 @@ salary
 
 ---
 
-# 6. SELECT with Calculation
+# 3.4. SELECT with Calculation
 
 SQL can perform calculations.
 
@@ -223,7 +223,7 @@ annual_salary → Alias
 
 ---
 
-# 7. SELECT with Arithmetic
+# 3.5. SELECT with Arithmetic
 
 SQL supports:
 
@@ -247,7 +247,7 @@ FROM employees;
 
 ---
 
-# 8. WHERE
+# 4. WHERE
 
 `WHERE` is used to **filter rows**.
 
@@ -277,7 +277,7 @@ Result:
 
 ---
 
-# 9. WHERE with Text
+# 4.1. WHERE with Text
 
 Find employees from Mumbai:
 
@@ -307,7 +307,7 @@ Numbers don't require quotes:
 
 ---
 
-# 10. Comparison Operators
+# 5. Comparison Operators
 
 `WHERE` commonly uses comparison operators.
 
@@ -323,7 +323,7 @@ Numbers don't require quotes:
 
 ---
 
-# 11. WHERE with `=`
+# 5.1. WHERE with `=`
 
 Find IT employees:
 
@@ -335,7 +335,7 @@ WHERE department = 'IT';
 
 ---
 
-# 12. WHERE with `>`
+# 5.2. WHERE with `>`
 
 Employees earning more than ₹60,000:
 
@@ -347,7 +347,7 @@ WHERE salary > 60000;
 
 ---
 
-# 13. WHERE with `<`
+# 5.3. WHERE with `<`
 
 Employees earning less than ₹50,000:
 
@@ -359,7 +359,7 @@ WHERE salary < 50000;
 
 ---
 
-# 14. WHERE with `>=`
+# 5.4. WHERE with `>=`
 
 Employees earning ₹60,000 or more:
 
@@ -371,7 +371,7 @@ WHERE salary >= 60000;
 
 ---
 
-# 15. WHERE with `<=`
+# 5.5. WHERE with `<=`
 
 Employees earning ₹50,000 or less:
 
@@ -383,7 +383,7 @@ WHERE salary <= 50000;
 
 ---
 
-# 16. WHERE with `<>`
+# 5.6. WHERE with `<>`
 
 Find employees who are not from IT:
 
@@ -395,7 +395,7 @@ WHERE department <> 'IT';
 
 ---
 
-# 17. WHERE with AND
+# 5.7. WHERE with AND
 
 `AND` means **all conditions must be true**.
 
@@ -417,7 +417,7 @@ Result:
 
 ---
 
-# 18. WHERE with OR
+# 5.8. WHERE with OR
 
 `OR` means **at least one condition must be true**.
 
@@ -432,7 +432,7 @@ OR city = 'Pune';
 
 ---
 
-# 19. AND vs OR
+# 5.9. AND vs OR
 
 ### AND
 
@@ -462,7 +462,7 @@ Only one condition needs to be true.
 
 ---
 
-# 20. Parentheses with WHERE
+# 5.10. Parentheses with WHERE
 
 When combining `AND` and `OR`, use parentheses to make the intended logic clear.
 
@@ -485,7 +485,7 @@ AND
 
 ---
 
-# 21. ORDER BY
+# 6. ORDER BY
 
 `ORDER BY` is used to **sort the result**.
 
@@ -501,7 +501,7 @@ Default sorting is generally ascending.
 
 ---
 
-# 22. ORDER BY ASC
+# 6.1. ORDER BY ASC
 
 Sort salary from lowest to highest:
 
@@ -523,7 +523,7 @@ Result starts:
 
 ---
 
-# 23. ORDER BY DESC
+# 6.2. ORDER BY DESC
 
 Sort salary from highest to lowest:
 
@@ -545,7 +545,7 @@ Result starts:
 
 ---
 
-# 24. ORDER BY Text
+# 6.3. ORDER BY Text
 
 Sort employee names alphabetically:
 
@@ -565,7 +565,7 @@ ORDER BY employee_name DESC;
 
 ---
 
-# 25. ORDER BY Multiple Columns
+# 6.4. ORDER BY Multiple Columns
 
 You can sort by more than one column.
 
@@ -593,7 +593,7 @@ For example, IT employees would appear:
 
 ---
 
-# 26. ORDER BY Using Column Position
+# 6.5. ORDER BY Using Column Position
 
 You can sometimes write:
 
@@ -624,7 +624,7 @@ because it is clearer and less fragile if the `SELECT` list changes.
 
 ---
 
-# 27. DISTINCT
+# 7. DISTINCT
 
 `DISTINCT` removes duplicate rows from the result.
 
@@ -637,7 +637,7 @@ FROM table;
 
 ---
 
-# 28. DISTINCT Example
+# 7.1. DISTINCT Example
 
 Our data contains:
 
@@ -673,7 +673,7 @@ Result:
 
 ---
 
-# 29. DISTINCT Department
+# 7.2. DISTINCT Department
 
 ```sql
 SELECT DISTINCT department
@@ -692,7 +692,7 @@ Result:
 
 ---
 
-# 30. DISTINCT with Multiple Columns
+# 7.3. DISTINCT with Multiple Columns
 
 This is important.
 
@@ -729,7 +729,7 @@ It means:
 
 ---
 
-# 31. DISTINCT with Calculations
+# 7.4. DISTINCT with Calculations
 
 You can also use:
 
@@ -742,7 +742,7 @@ This returns unique calculated annual salaries.
 
 ---
 
-# 32. Combining SELECT + WHERE + ORDER BY
+# 8. Combining SELECT + WHERE + ORDER BY
 
 Now combine what we have learned.
 
@@ -761,7 +761,7 @@ This is a very important basic SQL pattern.
 
 ---
 
-# 33. Combining DISTINCT + WHERE
+# 8.1. Combining DISTINCT + WHERE
 
 ### Question
 
@@ -782,7 +782,7 @@ Delhi
 
 ---
 
-# 34. Combining DISTINCT + ORDER BY
+# 8.2. Combining DISTINCT + ORDER BY
 
 Find unique cities and sort alphabetically:
 
@@ -794,7 +794,7 @@ ORDER BY city ASC;
 
 ---
 
-# 35. Complete Query
+# 9. Complete Query
 
 Let's write a more realistic query:
 
@@ -815,7 +815,7 @@ ORDER BY salary DESC;
 
 ---
 
-# 36. SQL Query Structure
+# 10. SQL Query Structure
 
 For this chapter, remember:
 
@@ -837,7 +837,7 @@ ORDER BY salary DESC;
 
 ---
 
-# 37. Logical Query Processing Order
+# 11. Logical Query Processing Order
 
 Although we **write**:
 
@@ -885,7 +885,7 @@ This becomes especially important when you learn `GROUP BY`, `HAVING`, aliases, 
 
 ---
 
-# 38. Common Mistakes
+# 12. Common Mistakes
 
 ## Mistake 1 — Forgetting quotes around text
 
@@ -988,7 +988,7 @@ We will cover `GROUP BY` separately.
 
 ---
 
-# 39. Solved Exercises
+# 13. Solved Exercises
 
 ## Exercise 1
 
@@ -1230,7 +1230,7 @@ ORDER BY salary DESC;
 
 ---
 
-# 40. Practice Questions
+# 14. Practice Questions
 
 Try these yourself before checking any solution.
 
