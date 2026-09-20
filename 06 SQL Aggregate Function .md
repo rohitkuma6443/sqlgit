@@ -1730,32 +1730,4 @@ IFNULL(bonus, 0)
 | `ROUND()`    | Round decimal results      |
 | Basic `JOIN` | Combine tables for reports |
 
-### The Most Important Pattern
 
-```text
-                SQL Aggregate Reporting
-
-                       Data
-                        ↓
-                     WHERE
-                        ↓
-                    GROUP BY
-                        ↓
-              Aggregate Function
-                        ↓
-                     HAVING
-                        ↓
-                    Final Result
-```
-
-### Remember These 5 Questions
-
-```text
-COUNT() → How many?
-SUM()   → What is the total?
-AVG()   → What is the average?
-MIN()   → What is the lowest?
-MAX()   → What is the highest?
-```
-
-**Core skill:** Once you understand `COUNT()`, `SUM()`, `AVG()`, `MIN()`, `MAX()`, `GROUP BY`, `HAVING`, and `COALESCE()`, you can create a large number of practical SQL summary and reporting queries.
