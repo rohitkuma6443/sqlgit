@@ -1,4 +1,4 @@
-# MySQL Installation with Examples and Official Documentation
+# MySQL Installation with Examples and Official Documentation ![](https://www.google.com/s2/favicons?domain=https://dev.mysql.com\&sz=32)
 
 ## 1. Download MySQL
 
@@ -18,20 +18,14 @@ For learning SQL on Windows, install these two components:
 
 The official Windows installation documentation describes the available installation packages and configuration process.
 
-![](https://www.google.com/s2/favicons?domain=https://dev.mysql.com\&sz=32)
-
-MySQL
-
-+1
 
 ## 2. Installation steps
 
-![MySQL: da instalação até a configuração | Alura Cursos Online](https://images.openai.com/static-rsc-4/eXTea72rEmqW-P5QCt6cZx8Un_4tproXCtEfEd_LnPISQEdp2oBM9Wxzc9MpsIACHB8d26rBvG8bt5Wk_SHs67vjFQ-XKqiPRztBg2pZH1p9UgE9Uuz88BAk1EFE1YyRwQAxim8QJ07AJt4x0nsRDdn1B26HTIaGtkoeJh2-_Fw?purpose=inline)
+![](https://camo.githubusercontent.com/043fd482143ebb80bd8836029c81fbc31391ef166e882b04f773e528fef7f987/68747470733a2f2f696d616765732e6f70656e61692e636f6d2f7374617469632d7273632d342f715a48694b74344e6b475f2d4643334841457434415754514579367941535971635a5232484d737579436a326e3975495061717a35624971524a4d453853432d544f794756313547327334685f543939704d34692d4f646f5252693566506d386d5131656d3551496b674c4f3652456e383146423741484d33472d7839342d496756734d5a636743324e4c36745135465237636f7951736e74655750486b44424b66734b4b3232332d686b3f707572706f73653d696e6c696e65)
 
 Step 1 — Select setup type
 
 Choose `Custom` to install the server and development tools, including Workbench where available.
-
 
 
 Step 2 — Install components
@@ -44,19 +38,11 @@ Step 3 — Configure the server
 
 Select a development configuration, retain port `3306` unless it is already occupied, and create a strong root password.
 
-![MySQL Connector: "Allow User Variables" - what does it do? | Community](https://images.openai.com/static-rsc-4/DwMtGMPwTUjxrbqazrrCT5IjTt_5eeOq5sT_rQsYYxqqiD5ZA1-xaHHEkykruzhq8o5NqmS43I2CBDjGhi0pHIyBhG9NJ1IPpMvfDy4aNpFyEWnIBNcPLeWo-piv22qE7fYrLQ6Vk3p89xRqyGBy6t4n07a2uBFp--ZRSRYCi3U?purpose=inline)
-
 Step 4 — Connect
 
 Open Workbench, select your local MySQL connection, and enter the root password.
 
 The exact screens may differ by installer version. The official manual covers Windows configuration and troubleshooting.
-
-![](https://www.google.com/s2/favicons?domain=https://dev.mysql.com\&sz=32)
-
-MySQL
-
-+1
 
 
 ## 3. First MySQL practical example
