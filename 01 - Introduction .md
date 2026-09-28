@@ -24,7 +24,7 @@ People often confuse these two, but they serve completely different purposes.
 
 | Aspect | SQL (Structured Query Language) | MySQL |
 | --- | --- | --- |
-| **What is it?** | A **language** used to communicate with databases. | A **software** (DBMS) that stores and manages data. |
+| **What is it?** | A **language** used to communicate with databases. | A **software** (RDBMS) that stores and manages data. |
 | **Function** | Used to write queries (e.g., `SELECT`, `INSERT`, `UPDATE`). | Executes those SQL queries to manage its own databases. |
 | **Updates** | Standardized language; rarely changes. | Software program; gets frequent versions and updates. |
 
