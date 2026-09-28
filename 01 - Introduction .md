@@ -30,7 +30,7 @@ People often confuse these two, but they serve completely different purposes.
 
 ---
 
-## 3. Structure of an RDBMS
+## 3. Structure of an DBMS
 
 Relational databases organize data into grids, much like a spreadsheet.
 
