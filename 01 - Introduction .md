@@ -9,7 +9,7 @@ An organized collection of structured data, stored electronically. It allows dat
 
 A DBMS (Database Management System) is the software used to manage databases. An RDBMS (Relational Database Management System) is an advanced type of DBMS.
 
-| Feature | RDBMS | DBMS |
+| Feature | DBMS | RDBMS |
 | --- | --- | --- |
 | **Data Storage** | Stored as files (hierarchical or navigational). | Stored in **tables** (rows and columns). |
 | **Relationships** | Does not support relationships between files. | Supports relationships using keys. |
@@ -30,7 +30,7 @@ People often confuse these two, but they serve completely different purposes.
 
 ---
 
-## 3. Structure of an DBMS
+## 3. Structure of an RDBMS
 
 Relational databases organize data into grids, much like a spreadsheet.
 
