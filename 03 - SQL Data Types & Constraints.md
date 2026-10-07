@@ -1589,36 +1589,6 @@ BLOB
 
 ---
 
-## Constraints
-
-```text
-NOT NULL
-→ Value is compulsory
-
-UNIQUE
-→ Duplicate values are not allowed
-
-PRIMARY KEY
-→ Unique identifier for each row
-
-FOREIGN KEY
-→ Connects two tables
-
-CHECK
-→ Validates a condition
-
-DEFAULT
-→ Automatically provides a default value
-
-AUTO_INCREMENT
-→ Automatically generates numbers
-
-INDEX
-→ Helps improve query/search performance
-```
-
----
-
 # Quick Real-World Example
 
 For an employee database:
@@ -1645,40 +1615,3 @@ CREATE TABLE employees (
 );
 ```
 
-Read it like this:
-
-```text
-employee_id
-→ Number
-→ Automatically generated
-→ Unique
-→ Primary Key
-
-employee_name
-→ Text
-→ Required
-
-email
-→ Text
-→ Cannot be duplicated
-
-age
-→ Number
-→ Must be 18 or above
-
-salary
-→ Decimal
-→ Cannot be negative
-
-department_id
-→ Number
-→ Must match a department
-
-status
-→ Text
-→ Active by default
-```
-
-> **Remember:**
-> **Data Type = What kind of data can be stored?**
-> **Constraint = What rules should that data follow?**
