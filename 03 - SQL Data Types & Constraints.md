@@ -654,7 +654,25 @@ Files
 Binary data
 ```
 
-In modern applications, files are often stored outside the database and their file path/URL is stored in the database instead.
+```sql
+CREATE TABLE dummy9 (
+    Emp_ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Photo longBLOB
+);
+```
+---
+```sql
+INSERT INTO dummy9 (Emp_ID, Name, Photo)
+VALUES
+(5, 'Rohit',
+ LOAD_FILE('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/1.bmp'));
+
+SELECT Emp_ID, Name, LENGTH(Photo) AS Photo_Size
+FROM dummy9;
+
+SHOW VARIABLES LIKE 'secure_file_priv';
+```
 
 ---
 
