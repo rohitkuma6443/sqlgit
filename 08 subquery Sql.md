@@ -1,4 +1,4 @@
-# SQL Chapter 7.1 — Subqueries
+# SQL Chapter Subqueries
 
 Beginner to Advanced | MySQL | Notes, Dataset, Solved Examples, Exercises and Interview Questions
 
