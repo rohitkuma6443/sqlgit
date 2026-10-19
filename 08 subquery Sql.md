@@ -25,60 +25,14 @@ The inner query calculates the average price. The outer query displays products 
 
 ## 2. Types of Subqueries
 
-|
-Type
-
-|
-
-Description
-
-|
+| Type | Description |
 | --- | --- |
-|
+| Single-row subquery | Returns one row or value |
+| Multiple-row subquery | Returns multiple rows |
+| Scalar subquery | Returns exactly one value |
+| Correlated subquery | Uses a value from the outer query |
+| Subquery in `FROM` | Creates a temporary result that can be queried|
 
-Single-row subquery
-
-|
-
-Returns one row or value
-
-|
-|
-
-Multiple-row subquery
-
-|
-
-Returns multiple rows
-
-|
-|
-
-Scalar subquery
-
-|
-
-Returns exactly one value
-
-|
-|
-
-Correlated subquery
-
-|
-
-Uses a value from the outer query
-
-|
-|
-
-Subquery in `FROM`
-
-|
-
-Creates a temporary result that can be queried
-
-|
 
 ## 3. Create the Database and Dataset
 
@@ -801,86 +755,13 @@ No. Performance depends on the query, indexes, database engine, and execution pl
 
 ## 13. Quick Revision
 
-|
-Concept
-
-|
-
-Purpose
-
-|
+| Concept | Purpose|
 | --- | --- |
-|
-
-Subquery
-
-|
-
-Query inside another query
-
-|
-|
-
-Scalar subquery
-
-|
-
-Returns one value
-
-|
-|
-
-`IN`
-
-|
-
-Matches any value in a result set
-
-|
-|
-
-`NOT IN`
-
-|
-
-Excludes values in a result set; take care with `NULL`
-
-|
-|
-
-Correlated subquery
-
-|
-
-Refers to the outer query
-
-|
-|
-
-Derived table
-
-|
-
-Subquery in `FROM`
-
-|
-|
-
-`ANY`
-
-|
-
-Comparison succeeds for at least one value
-
-|
-|
-
-`ALL`
-
-|
-
-Comparison must succeed for every value
-
-|
-
-Next topic: SQL `CASE` — creating categories and conditional output using `WHEN`, `THEN`, `ELSE`, and `END`.
+| Subquery | Query inside another query |
+| Scalar subquery | Returns one value |
+| `IN` | Matches any value in a result set |
+| `NOT IN` | Excludes values in a result set; take care with `NULL` |
+| Correlated subquery | Refers to the outer query |
+| Derived table | Subquery in `FROM` |
+| `ANY` | Comparison succeeds for at least one value |
+| `ALL` | Comparison must succeed for every value |
