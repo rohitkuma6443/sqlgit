@@ -1,4 +1,4 @@
-# SQL Chapter 7.2 — CTE (Common Table Expression)
+# SQL — CTE (Common Table Expression)
 
 MySQL | Beginner to Advanced | Notes, Dataset, Solved Examples, Practice Questions and Interview Questions
 
