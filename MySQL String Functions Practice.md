@@ -259,63 +259,6 @@ SELECT
 FROM customer
 ORDER BY name_length DESC;
 ```
-
-Explanation: `ORDER BY ... DESC` sorts the longest names first.
-
-## 4. Test yourself
-
-Try these five questions without looking at the solutions above.
-
-1\. Which function extracts the text after the last @ symbol?
-
-LEFT()
-
-SUBSTRING_INDEX()
-
-REVERSE()
-
-LPAD()
-
-2\. What is the output of UPPER(LEFT('rohit', 2))?
-
-ro
-
-RO
-
-ROHIT
-
-oh
-
-3\. Which function combines first_name and last_name with a space between them?
-
-CONCAT(first_name, ' ', last_name)
-
-LEFT(first_name, last_name)
-
-COUNT(first_name, last_name)
-
-LOCATE(first_name, last_name)
-
-4\. What does CHAR_LENGTH('SQL') return?
-
-2
-
-3
-
-4
-
-0
-
-5\. Which clause groups customers by the domain extracted from their emails?
-
-ORDER BY
-
-WHERE
-
-GROUP BY
-
-LIMIT
-
 Check answers
 
 Next topic: Once you are comfortable with these 20 questions, practise SQL string functions with `CASE`, `WHERE`, `GROUP BY`, and `HAVING` on a larger customer dataset.
