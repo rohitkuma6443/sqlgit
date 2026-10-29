@@ -1,7 +1,3 @@
-# MySQL String Functions: Practice Questions with Solutions
-
-This practice set uses the `string_practice` database and `customer` table. It includes easy questions, combined string functions, and practical SQL queries with solutions.
-
 ## 1. Database and table setup
 
 Run this code in MySQL Workbench.
@@ -35,7 +31,7 @@ INSERT INTO customer VALUES
 
 ### Basic level
 
-Q1. Display the full name of every customer.
+#### Q1. Display the full name of every customer.
 
 ```
 SELECT CONCAT(first_name, ' ', last_name) AS full_name
@@ -44,7 +40,7 @@ FROM customer;
 
 Explanation: `CONCAT()` joins the first name, a space, and the last name.
 
-Q2. Display all first names in uppercase.
+#### Q2. Display all first names in uppercase.
 
 ```
 SELECT UPPER(first_name) AS first_name
@@ -53,7 +49,7 @@ FROM customer;
 
 Explanation: `UPPER()` converts lowercase letters into uppercase.
 
-Q3. Display all email addresses in lowercase.
+#### Q3. Display all email addresses in lowercase.
 
 ```
 SELECT LOWER(email) AS email
@@ -62,7 +58,7 @@ FROM customer;
 
 Explanation: `LOWER()` converts text into lowercase.
 
-Q4. Display the first three letters of each first name.
+#### Q4. Display the first three letters of each first name.
 
 ```
 SELECT first_name, LEFT(first_name, 3) AS short_name
@@ -71,7 +67,7 @@ FROM customer;
 
 Explanation: `LEFT()` returns three characters from the beginning of the name.
 
-Q5. Display the last three letters of each last name.
+#### Q5. Display the last three letters of each last name.
 
 ```
 SELECT last_name, RIGHT(last_name, 3) AS last_three_letters
@@ -82,7 +78,7 @@ Explanation: `RIGHT()` returns three characters from the end.
 
 ### Intermediate level: Combine string functions
 
-Q6. Display full names in uppercase.
+#### Q6. Display full names in uppercase.
 
 ```
 SELECT UPPER(CONCAT(first_name, ' ', last_name)) AS full_name
@@ -94,7 +90,7 @@ Explanation:
 1. `CONCAT()` joins the names.
 2. `UPPER()` converts the complete name to uppercase.
 
-Q7. Generate initials for each customer.
+#### Q7. Generate initials for each customer.
 
 ```
 SELECT
@@ -111,7 +107,7 @@ Explanation: `LEFT()` extracts the first character from each name, `UPPER()` cap
 
 Example: Rohit Jha becomes `RJ`.
 
-Q8. Display the username from each email address.
+#### Q8. Display the username from each email address.
 
 ```
 SELECT
@@ -122,7 +118,7 @@ FROM customer;
 
 Explanation: `SUBSTRING_INDEX()` extracts the text before the first `@` symbol.
 
-Q9. Display the email domain for each customer.
+#### Q9. Display the email domain for each customer.
 
 ```
 SELECT
@@ -133,7 +129,7 @@ FROM customer;
 
 Explanation: A count of `-1` extracts the text after the last `@` symbol.
 
-Q10. Display each customer's full name and its character count.
+#### Q10. Display each customer's full name and its character count.
 
 ```
 SELECT
@@ -146,7 +142,7 @@ Explanation: `CHAR_LENGTH()` counts the characters, including the space between 
 
 ### Practical level: String functions with WHERE and GROUP BY
 
-Q11. Find customers whose first name starts with R, regardless of case.
+#### Q11. Find customers whose first name starts with R, regardless of case.
 
 ```
 SELECT *
@@ -156,7 +152,7 @@ WHERE UPPER(LEFT(first_name, 1)) = 'R';
 
 Explanation: `LEFT()` extracts the first letter, and `UPPER()` standardizes its case before filtering.
 
-Q12. Display lowercase full names of customers living in Delhi.
+#### Q12. Display lowercase full names of customers living in Delhi.
 
 ```
 SELECT
@@ -168,7 +164,7 @@ WHERE city = 'Delhi';
 
 Explanation: `WHERE` filters Delhi customers; `CONCAT()` and `LOWER()` format their names.
 
-Q13. Count customers by email provider.
+#### Q13. Count customers by email provider.
 
 ```
 SELECT
@@ -188,7 +184,7 @@ Expected result:
 | yahoo.com   | 3               |
 | outlook.com | 2               |
 
-Q14. Display customer IDs as five-character strings padded with zeros.
+#### Q14. Display customer IDs as five-character strings padded with zeros.
 
 ```
 SELECT
@@ -199,7 +195,7 @@ FROM customer;
 
 Explanation: `LPAD()` adds zeros on the left until the output has five characters. For example, `1` becomes `00001`.
 
-Q15. Replace `gmail.com` with `example.com` in the displayed email addresses.
+#### Q15. Replace `gmail.com` with `example.com` in the displayed email addresses.
 
 ```
 SELECT
@@ -212,7 +208,7 @@ Explanation: `REPLACE()` substitutes matching text. It does not update the origi
 
 ## 3. Bonus questions with solutions
 
-Q16. Display customer names in reverse order.
+#### Q16. Display customer names in reverse order.
 
 ```
 SELECT
@@ -221,7 +217,7 @@ SELECT
 FROM customer;
 ```
 
-Q17. Find the position of the `@` symbol in each email address.
+#### Q17. Find the position of the `@` symbol in each email address.
 
 ```
 SELECT
@@ -230,7 +226,7 @@ SELECT
 FROM customer;
 ```
 
-Q18. Create usernames by combining lowercase first names and cities.
+#### Q18. Create usernames by combining lowercase first names and cities.
 
 ```
 SELECT
@@ -240,7 +236,7 @@ FROM customer;
 
 Example: `rohit_mumbai`.
 
-Q19. Display names that contain the letter `a`, regardless of case.
+#### Q19. Display names that contain the letter `a`, regardless of case.
 
 ```
 SELECT *
@@ -250,7 +246,7 @@ WHERE LOCATE('a', LOWER(first_name)) > 0;
 
 Explanation: `LOWER()` standardizes the case, and `LOCATE()` returns the position of `a`. A result greater than zero means the letter exists.
 
-Q20. Display full names sorted from longest to shortest.
+#### Q20. Display full names sorted from longest to shortest.
 
 ```
 SELECT
