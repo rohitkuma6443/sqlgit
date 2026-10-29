@@ -255,6 +255,3 @@ SELECT
 FROM customer
 ORDER BY name_length DESC;
 ```
-Check answers
-
-Next topic: Once you are comfortable with these 20 questions, practise SQL string functions with `CASE`, `WHERE`, `GROUP BY`, and `HAVING` on a larger customer dataset.
