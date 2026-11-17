@@ -11,7 +11,7 @@ Using the same `employees` table:
 | 105        | Suresh       | Management | 90000  | NULL      |
 | 106        | Karan        | IT         | 28000  | 101       |
 | 107        | Pooja        | HR         | 31000  | 101       |
-
+```
 CREATE DATABASE self_join_db;
 
 USE self_join_db;
@@ -32,6 +32,8 @@ INSERT INTO employees VALUES
 (105, 'Suresh', 'Management', 90000, NULL),
 (106, 'Karan', 'IT', 28000, 101),
 (107, 'Pooja', 'HR', 31000, 101);
+
+```
 
 ## **Q1. Display employee name and manager name.**
 
