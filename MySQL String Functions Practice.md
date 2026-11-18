@@ -206,8 +206,6 @@ FROM customer;
 
 Explanation: `REPLACE()` substitutes matching text. It does not update the original table.
 
-## 3. Bonus questions with solutions
-
 #### Q16. Display customer names in reverse order.
 
 ```
