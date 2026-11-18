@@ -1,9 +1,5 @@
 # **SQL String Functions**
 
-SQL String Functions are used to manipulate, modify, extract, and format text values stored in database columns.
-
-Let's learn with simple examples using MySQL.
-
 ## **1. Sample Dataset**
 
 **Table: Students**
@@ -244,26 +240,4 @@ Try these SQL queries using the Students table.
 8. Replace the name 'Rohit' with 'Rahul'.
 9. Display the first two characters of each first name in uppercase.
 10. Display full names separated by a hyphen (-).
-
-## **5. Real-World SQL String Function Examples**
-
-```
--- Extract first name from a full name
-SELECT SUBSTRING_INDEX('Rohit Kumar Jha', ' ', 1);
-
--- Extract last name
-SELECT SUBSTRING_INDEX('Rohit Kumar Jha', ' ', -1);
-
--- Remove extra spaces
-SELECT TRIM('  Rohit Jha  ');
-
--- Create employee code
-SELECT CONCAT('EMP-', LPAD(101, 5, '0'));
-
--- Convert email addresses to lowercase
-SELECT LOWER('ROHIT@GMAIL.COM');
-```
-
-**Important:** `SUBSTRING_INDEX()` is also a very useful MySQL string function, especially when working with full names, email addresses and comma-separated values.
-
-I can also teach you all SQL string functions with a 50-row practical dataset, solved queries and exercises for classroom practice.
+exercises for classroom practice.
