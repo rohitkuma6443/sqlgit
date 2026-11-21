@@ -1,7 +1,5 @@
 # SQL — CTE (Common Table Expression)
 
-MySQL | Beginner to Advanced | Notes, Dataset, Solved Examples, Practice Questions and Interview Questions
-
 ## 1. What is a CTE?
 
 CTE stands for Common Table Expression.
