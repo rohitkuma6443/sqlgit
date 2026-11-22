@@ -1,7 +1,5 @@
 ## SQL Repository Description
 
-This repository is a comprehensive collection of **SQL scripts**, **queries**, and **database management examples** designed to help developers, analysts, and learners work efficiently with relational databases.  
-
 ### Key Features
 - **Structured queries** for CRUD operations (Create, Read, Update, Delete).  
 - **Database schema** examples for real-world applications.  
