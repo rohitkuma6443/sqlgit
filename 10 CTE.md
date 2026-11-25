@@ -1,21 +1,15 @@
-# **SQL CTE (Common Table Expression) – Complete Chapter**
+# **SQL CTE (Common Table Expression)**
 
 Database: MySQL 8.0+ | Level: Beginner to Advanced | Practical SQL Training
-
-This chapter covers all 17 topics in your structure, using one common database: `cte_learning_db`.
 
 # **Chapter 1: Introduction to CTE**
 
 ## **1.1 What is a CTE?**
-
 CTE stands for **Common Table Expression**.
-
 A CTE is a temporary named result set that is defined using the `WITH` keyword and used within a single SQL statement.
-
 It helps us divide complex SQL queries into smaller, readable sections.
 
 ### **Example: Without CTE**
-
 Find employees earning more than ₹50,000.
 
 ```
