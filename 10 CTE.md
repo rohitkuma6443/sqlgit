@@ -2,7 +2,7 @@
 
 Database: MySQL 8.0+ | Level: Beginner to Advanced | Practical SQL Training
 
-# **Chapter 1: Introduction to CTE**
+# **1: Introduction to CTE**
 
 ## **1.1 What is a CTE?**
 CTE stands for **Common Table Expression**.
@@ -55,7 +55,7 @@ FROM cte_name;
 
 **Important:** A CTE is not a permanent table. It is available only within the SQL statement in which it is defined.
 
-# **Chapter 2: Dataset Creation**
+# **Dataset Creation**
 
 We will use four tables:
 
@@ -274,7 +274,7 @@ Expected output:
 | Products    | 12            |
 | Sales       | 40            |
 
-# **Chapter 3: Basic CTE**
+# **3: Basic CTE**
 
 ## **3.1 Simple CTE**
 
@@ -375,7 +375,7 @@ Expected output:
 | Priya         | 65000  |
 | Suresh        | 62000  |
 
-# **Chapter 4: CTE with WHERE**
+# **4: CTE with WHERE**
 
 The `WHERE` clause filters records based on a condition.
 
@@ -462,7 +462,7 @@ FROM employee_data
 WHERE salary BETWEEN 40000 AND 60000;
 ```
 
-# **Chapter 5: CTE with GROUP BY**
+# **5: CTE with GROUP BY**
 
 `GROUP BY` groups records and performs aggregate calculations.
 
@@ -568,7 +568,7 @@ FROM employee_sales
 ORDER BY total_sales DESC;
 ```
 
-# **Chapter 6: CTE with HAVING**
+# **6: CTE with HAVING**
 
 `HAVING` filters grouped or aggregated results.
 
@@ -643,7 +643,7 @@ SELECT *
 FROM employee_sales;
 ```
 
-# **Chapter 7: CTE with JOIN**
+# **7: CTE with JOIN**
 
 A CTE can be joined with other tables just like a normal table.
 
@@ -738,7 +738,7 @@ INNER JOIN products p
 ON s.product_id = p.product_id;
 ```
 
-# **Chapter 8: Multiple CTEs**
+# **8: Multiple CTEs**
 
 We can create multiple CTEs in one SQL statement.
 
@@ -845,7 +845,7 @@ JOIN department_details dd
 ON ed.department_id = dd.department_id;
 ```
 
-# **Chapter 9: CTE with Subqueries**
+# **9: CTE with Subqueries**
 
 CTEs and subqueries can be used together.
 
@@ -937,7 +937,7 @@ Expected output:
 
 All 12 products have at least one sale in this dataset.
 
-# **Chapter 10: CTE with CASE**
+# **10: CTE with CASE**
 
 The `CASE` expression performs conditional calculations and classification.
 
@@ -1016,7 +1016,7 @@ SELECT department_id,
 FROM department_data;
 ```
 
-# **Chapter 11: CTE with Window Functions**
+# **11: CTE with Window Functions**
 
 Window functions perform calculations across related rows without combining them into a single grouped row.
 
@@ -1142,7 +1142,7 @@ Expected output:
 | ------------- | ------ | ----------- |
 | Karan         | 70000  | 2           |
 
-# **Chapter 12: Recursive CTE**
+# **12: Recursive CTE**
 
 A recursive CTE is a CTE that refers to itself.
 
@@ -1317,7 +1317,7 @@ Expected output:
 | 5           | Tester          | 2          | 3        |
 | 6           | Sales Executive | 3          | 3        |
 
-# **Chapter 13: Real-World Use Cases**
+# **13: Real-World Use Cases**
 
 This section applies CTEs to common business reporting tasks.
 
@@ -1480,7 +1480,7 @@ CROSS JOIN average_sales av
 WHERE ps.total_sales > av.avg_product_sales;
 ```
 
-# **Chapter 14: CTE vs Subquery vs Temporary Table**
+# **14: CTE vs Subquery vs Temporary Table**
 
 | Feature           | CTE                        | Subquery                       | Temporary Table                       |
 | ----------------- | -------------------------- | ------------------------------ | ------------------------------------- |
@@ -1542,7 +1542,7 @@ DROP TEMPORARY TABLE high_salary;
 
 Performance is not automatically better with a CTE. The MySQL optimizer determines how a CTE is executed, including whether it can be merged or needs materialization.
 
-# **Chapter 15: Solved Exercises**
+# **15: Solved Exercises**
 
 These exercises combine multiple concepts.
 
@@ -1751,7 +1751,7 @@ JOIN employees e
 ON es.employee_id = e.employee_id;
 ```
 
-# **Chapter 16: Practice Questions**
+# **16: Practice Questions**
 
 Try solving these questions independently using the `cte_learning_db` dataset.
 
@@ -1800,7 +1800,7 @@ Try solving these questions independently using the `cte_learning_db` dataset.
 | 29  | Find the running total of sales by sale date.                                                       |
 | 30  | Create a complete employee performance report using multiple CTEs, JOIN, CASE and window functions. |
 
-# **Chapter 17: SQL CTE Interview Questions and Answers**
+# **17: SQL CTE Interview Questions and Answers**
 
 **Q1. What is a CTE?**
 
